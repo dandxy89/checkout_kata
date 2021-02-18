@@ -15,6 +15,12 @@ Implement the code for a supermarket checkout that calculates the total price of
 
 Our checkout accepts items in any order, so that if we scan a B, an A, and another B, we’ll recognise the two B’s and price them at 45 (for a total price so far of 95). Because the pricing changes frequently, we need to be able to pass in a set of pricing rules each time we start handling a checkout transaction.
 
+An example of the type of questions that might be asked in the interview are:
+
+1. Can you write a unittest?
+2. Can you explain what would happen if an Item didn't exist in the Checkout and how you might handle it?
+3. Can you explain how you might rewrite or improve upon the initial implementation?
+
 ## Prototype
 
 An initial prototype has been prepared - during the interview you'll be expected to extend and improve upon the initial implementation to fulfill all the requirements specified above.
