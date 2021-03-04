@@ -32,11 +32,13 @@ virtualenv: clean
 update_pip:
 	$(BIN)/pip install --upgrade pip
 
-build: clean virtualenv update_pip
+pip_install:
 	$(BIN)/pip install -r requirements.txt
 
 test:
 	$(BIN)/pytest tests
+
+build_new: clean virtualenv update_pip pip_install test
 
 run_pre_commit:
 	$(BIN)/pre-commit run --all-file
